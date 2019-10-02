@@ -11,5 +11,5 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
-pageTitle:string = 'Loki why u go home';
+pageTitle:string = 'Bunny hater';
 }
