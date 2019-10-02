@@ -12,11 +12,14 @@
     </mat-card>
 </div>
 <div>
+        Search Books By Tite or Author:
+        <input (keyup)="searchTerm$.next($event.target.value)">
+      
     <mat-list>
         <mat-list-item *ngFor="let book of books">
             <mat-icon mat-list-icon>book</mat-icon>
             <h3 mat-line><strong>{{book.title}}</strong></h3>
-            
+
             <p mat-line>
                 <span>{{book.author}}</span>
             </p>
