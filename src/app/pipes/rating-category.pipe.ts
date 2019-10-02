@@ -4,8 +4,6 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'ratingCategory'
 })
 export class RatingCategoryPipe implements PipeTransform {
-
- 
     transform(value: number): string {
       if (value <= 2) {
       return 'Poor';
@@ -14,7 +12,6 @@ export class RatingCategoryPipe implements PipeTransform {
       return 'Fine';
       }
       return 'Excellent';
-    
 
-}
-}
+                        }
+              } 

@@ -16,11 +16,14 @@
         <mat-list-item *ngFor="let book of books">
             <mat-icon mat-list-icon>book</mat-icon>
             <h3 mat-line><strong>{{book.title}}</strong></h3>
+            
             <p mat-line>
                 <span>{{book.author}}</span>
             </p>
             <p mat-line>
-                {{book.rating | ratingCategory}}
+                <loki-rating [rating]="book.rating" [book]="book"
+                 (ratingClicked)="onRatingUpdate($event)">
+            </loki-rating>
             </p>
             <p mat-line>
                 <span [class]="book.isCheckedOut ? 'chip chip-danger' : 'chip chip-success'">
