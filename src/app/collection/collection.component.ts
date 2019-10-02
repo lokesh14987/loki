@@ -5,7 +5,6 @@ import { DataService } from '../services/data.service';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'loki-collection',
   templateUrl: './collection.component.html',
   styleUrls: ['./collection.component.css']
 })
