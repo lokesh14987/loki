@@ -13,5 +13,5 @@ export class RatingCategoryPipe implements PipeTransform {
       }
       return 'Excellent';
 
-                        }
-              } 
+}
+}
